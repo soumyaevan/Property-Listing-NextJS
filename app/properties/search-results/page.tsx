@@ -5,7 +5,6 @@ import Property from "@/models/Property";
 import { PropertyType } from "@/types";
 import { ArrowLeftCircle } from "lucide-react";
 import Link from "next/link";
-import { toast } from "react-toastify";
 
 const SearchResultPage = async ({
   searchParams,
@@ -74,7 +73,6 @@ const SearchResultPage = async ({
       </>
     );
   } catch (error) {
-    toast.error(error as string);
     return (
       <section className="px-4 py-6">
         <div className="container m-auto">

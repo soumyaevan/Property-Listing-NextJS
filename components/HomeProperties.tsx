@@ -1,7 +1,6 @@
 import PropertyCard from "@/components/PropertyCard";
 import connectDB from "@/config/database";
 import Property from "@/models/Property";
-import properties from "@/properties.json";
 import { PropertyType } from "@/types";
 import Link from "next/link";
 
