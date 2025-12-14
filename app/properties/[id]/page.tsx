@@ -73,7 +73,7 @@ const PropertyDetailPage = async ({
           </Link>
         </div>
       </section>
-      <section className="bg-blue-50">
+      <section className="bg-blue-50 dark:bg-gray-600">
         <div className="container m-auto py-10 px-6">
           <div className="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
             <PropertyDetails property={property} />

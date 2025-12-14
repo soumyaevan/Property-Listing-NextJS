@@ -38,7 +38,7 @@ const PropertyCard = ({ property }: { property: PropertyType }) => {
       <div className="p-4 dark:bg-white shadow-md">
         <div className="text-left md:text-center lg:text-left mb-6">
           <div className="text-gray-600 ">{property.type}</div>
-          <h3 className="text-xl font-bold">{property.name}</h3>
+          <h3 className="text-xl font-bold dark:text-black">{property.name}</h3>
         </div>
         <h3 className="absolute top-2.5 right-2.5 bg-white px-4 py-2 rounded-lg text-blue-500 font-bold text-right md:text-center lg:text-right">
           {getRateDisplay()}

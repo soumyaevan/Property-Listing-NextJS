@@ -5,7 +5,7 @@ const InfoBoxes = () => {
     // <!-- Renters and Owners -->
     <section>
       <div className="container m-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg dark:text-black">
           <InfoBox
             heading="For Renters"
             backGroundColor="bg-gray-100"
