@@ -1,36 +1,147 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🏠 PropertyPulse - Modern Property Listing Platform
+A full-stack property rental platform built with Next.js 16, MongoDB, and NextAuth, featuring real-time messaging, bookmarking, and advanced search capabilities.
 
-## Getting Started
+<img src="https://img.shields.io/badge/Next.js-16.0-black" alt="Next.js">
 
-First, run the development server:
+<img src="https://img.shields.io/badge/TypeScript-5.0-blue" alt="TypeScript">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<img src="https://img.shields.io/badge/MongoDB-7.0-green" alt="MongoDB">
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<img src="https://img.shields.io/badge/Tailwind-4.0-38bdf8" alt="Tailwind CSS">
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📋 Table of Contents
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Overview
+- Business Use Cases
+- Features
+- Tech Stack
 
-## Learn More
+🎯 Overview
+PropertyPulse is a comprehensive property listing and rental management platform that connects property owners with potential renters. The platform offers a seamless experience for browsing, searching, and managing rental properties with features like real-time messaging, bookmarking, and interactive maps.
 
-To learn more about Next.js, take a look at the following resources:
+💼 Business Use Cases
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- This platform is ideal for:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🏢 Property Management Companies
 
-## Deploy on Vercel
+- Manage multiple property listings
+- Track inquiries and messages from potential tenants
+- Showcase featured properties
+- Automated messaging system for tenant communication
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🏘️ Real Estate Agencies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- List rental properties for short-term and long-term rentals
+- Provide detailed property information with high-quality images
+- Enable direct communication between agents and clients
+- Track property views and bookmarks
+
+🌐 Vacation Rental Services
+
+- List vacation homes, apartments, and cabins
+- Flexible pricing (nightly, weekly, monthly rates)
+- Location-based search with interactive maps
+- User authentication and booking management
+
+👤 Individual Property Owners
+
+- Self-service property listing
+- Direct tenant communication
+- Profile management
+- Bookmark potential tenants' inquiries
+
+✨ Features
+🔐 Authentication & Authorization
+
+- Google OAuth integration via NextAuth
+- JWT-based session management
+- Protected routes for authenticated users
+- User profile management
+
+🏡 Property Management
+
+- CRUD Operations: Create, Read, Update, Delete properties
+- Image Upload: Multiple image support via Cloudinary
+- Featured Properties: Highlight premium listings
+- Property Types: Apartment, Condo, House, Cabin, Studio, Room, etc.
+- Flexible Pricing: Nightly, weekly, and monthly rates
+
+🔍 Advanced Search & Discovery
+
+- Location-based Search: Search by city, state, street, or zipcode
+- Type Filtering: Filter by property type
+- Recent Properties: Display latest listings
+- Pagination: Efficient browsing with configurable page sizes
+
+💬 Messaging System
+
+- Direct property owner-renter communication
+- Read/Unread message tracking
+- Real-time unread count notifications
+- Message deletion and management
+
+⭐ User Interactions
+
+- Bookmarking: Save favorite properties
+- Share Properties: Social media integration (Facebook, Twitter, WhatsApp, Email)
+- Contact Forms: Inquiry forms with validation
+
+🗺️ Interactive Maps
+
+- Mapbox integration for property locations
+- Google Geocoding API for address validation
+- Pin markers for exact locations
+- Interactive map exploration
+
+🎨 UI/UX Features
+
+- Dark Mode: Theme switching with next-themes
+- Responsive Design: Mobile-first approach with Tailwind CSS
+- Loading States: Spinners and skeleton screens
+- Toast Notifications: Real-time feedback with react-toastify
+- Image Galleries: Photoswipe integration for image viewing
+
+🛠️ Tech Stack
+
+### Frontend
+
+- Framework: Next.js 16 (App Router)
+- Language: TypeScript 5.0
+- Styling: Tailwind CSS 4.0
+- ### UI Components:
+- - Radix UI (Dropdown menus)
+- - shadcn/ui components
+- - Lucide React (Icons)
+- - React Icons
+- Image Optimization:
+- Next.js Image component
+- Cloudinary (next-cloudinary)
+- Maps: react-map-gl with Mapbox
+- State Management: Zustand
+- Forms: React Hook Form patterns
+- Notifications: react-toastify
+
+### Backend
+
+- Runtime: Node.js
+- Framework: Next.js API Routes (Server Actions)
+- Database: MongoDB 7.0 with Mongoose 9.0
+- Authentication: NextAuth 4.24 with Google Provider
+- File Storage: Cloudinary
+- Geocoding: react-geocode (Google API)
+
+### Developer Tools
+
+- Package Manager: npm/yarn
+- Linting: ESLint
+- Type Checking: TypeScript
+- CSS: PostCSS with Tailwind
+
+Data Flow
+
+1. Client Request → Next.js App Router
+2. Server Components → Fetch data directly from MongoDB
+3. Client Components → Use Server Actions for mutations
+4. Server Actions → Validate, process, revalidate cache
+5. Response → Return to client with updated data
